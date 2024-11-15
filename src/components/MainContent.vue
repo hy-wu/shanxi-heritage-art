@@ -3,10 +3,10 @@
         <AboutSection />
         <ArtworkSection />
         <HeritageSection />
-        <DigitalSection />
+        <DigitalSection @add-to-cart="handleAddToCart" />
         <CultureSection />
         <FeedbackSection />
-        <CartSection />
+        <CartSection :cart="cart" @remove-from-cart="handleRemoveFromCart" @checkout="handleCheckout" />
     </main>
 </template>
 
@@ -28,6 +28,29 @@ export default {
         CultureSection,
         FeedbackSection,
         CartSection
+    },
+    data() {
+        return {
+            cart: []
+        };
+    },
+    methods: {
+        handleAddToCart(product) {
+            this.cart.push(product);
+        },
+        handleRemoveFromCart(product) {
+            const index = this.cart.indexOf(product);
+            if (index > -1) {
+                this.cart.splice(index, 1);
+            }
+        },
+        handleCheckout() {
+            alert('订单已提交！');
+            this.cart = [];
+        },
+        toggleCartSection() {
+            this.$emit('toggle-cart');
+        }
     }
 };
 </script>

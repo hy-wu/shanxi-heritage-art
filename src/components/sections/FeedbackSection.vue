@@ -15,7 +15,7 @@
                     </div>
                     <div class="form-group">
                         <label for="category">关注领域</label>
-                        <select id="category">
+                        <select id="category" class="custom-select">
                             <option value="art">艺术创作</option>
                             <option value="heritage">建筑保护</option>
                             <option value="culture">文化传承</option>

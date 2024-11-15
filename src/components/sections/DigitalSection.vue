@@ -2,19 +2,20 @@
   <section id="digital" class="section">
     <h2>数字展馆</h2>
     <div class="product-showcase" data-aos="fade-up">
-      <div class="product-grid">
+      <div class="product-scroll-container">
         <div class="product-card" v-for="product in products" :key="product.id">
           <img :src="product.image" :alt="product.name">
           <h3>{{ product.name }}</h3>
           <p>{{ product.description }}</p>
           <div class="product-options">
             <label>样式:
-              <select v-model="product.selectedStyle">
+              <select v-model="product.selectedStyle" class="custom-select">
                 <option v-for="style in product.styles" :key="style" :value="style">{{ style }}</option>
               </select>
             </label>
+            <span style="margin-right: 20px;"></span>
             <label>颜色:
-              <select v-model="product.selectedColor">
+              <select v-model="product.selectedColor" class="custom-select">
                 <option v-for="color in product.colors" :key="color" :value="color">{{ color }}</option>
               </select>
             </label>
@@ -37,7 +38,7 @@ export default {
         {
           id: 1,
           name: '叶雕艺术',
-          image: 'images/leaf-art.jpg',
+          image: require('../../assets/images/leaf-art.png'),
           description: '精美的叶雕艺术品，展现自然之美。',
           styles: ['简约', '复古', '现代'],
           colors: ['红色', '绿色', '蓝色'],
@@ -48,7 +49,7 @@ export default {
         {
           id: 2,
           name: '立体纸雕',
-          image: 'images/paper-art.jpg',
+          image: require('../../assets/images/paper-art.png'),
           description: '立体纸雕，层次分明，栩栩如生。',
           styles: ['传统', '现代'],
           colors: ['白色', '黑色'],
@@ -59,7 +60,7 @@ export default {
         {
           id: 3,
           name: '传统剪纸',
-          image: 'images/cut-paper.jpg',
+          image: require('../../assets/images/traditional-cut.png'),
           description: '传统剪纸，手工艺的精华。',
           styles: ['经典', '创新'],
           colors: ['红色', '黄色'],
@@ -84,5 +85,30 @@ export default {
 </script>
 
 <style scoped>
-/* 可以在这里添加特定于 DigitalSection 的样式 */
+.product-showcase {
+  font-family: "STKaiti", "华文楷体", serif;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.product-scroll-container {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.product-card {
+  display: inline-block;
+  width: 300px;
+  margin-right: 20px;
+  white-space: normal;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.model-viewer img {
+    width: 100%;
+    height: auto;
+}
+
 </style>
