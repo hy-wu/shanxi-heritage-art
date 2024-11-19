@@ -28,6 +28,6 @@
 
 1. 将 `deploy.py` 第9行修改为 `os.system('git push -f git@github.com:<username>/shanxi-heritage-art.git main:gh-pages')
 `, 其中 `<username>` 为 GitHub 用户名 (假设配置了 GitHub SSH Key)
-2. `python deploy.py` (假设安装了 Python)
+2. `python deploy.py` (假设安装了 Python, 否则可以逐句执行 `deploy.py` 中的命令)
 3. 在项目的 `Settings` -> `Pages` -> `Build and deployment` -> `Source` 中选择 `Deploy from a branch`, 并选择 `gh-pages` 分支, `/ (root)` 目录, 点击 `Save`
 4. 访问 `https://<username>.github.io/shanxi-heritage-art/`

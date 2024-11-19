@@ -44,7 +44,6 @@ export default {
             this.$emit('remove-from-cart', item);
         },
         checkout() {
-            alert('订单已提交！');
             this.$emit('checkout');
         }
     }

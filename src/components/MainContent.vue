@@ -45,7 +45,7 @@ export default {
             }
         },
         handleCheckout() {
-            alert('订单已提交！');
+            alert('订单已提交！\n此功能未实现！');
             this.cart = [];
         },
         toggleCartSection() {

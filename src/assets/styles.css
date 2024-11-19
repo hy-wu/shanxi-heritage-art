@@ -243,6 +243,7 @@ body {
     pointer-events: none;
 }
 
+/* 艺术呈现部分 */
 .art-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -325,7 +326,9 @@ footer {
 .heritage-card {
     min-width: 300px;
     background: white;
+    border: 1px solid var(--light-accent);
     border-radius: 12px;
+    padding: 1.5rem;
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     scroll-snap-align: start;
