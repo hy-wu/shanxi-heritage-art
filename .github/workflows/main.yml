@@ -41,6 +41,7 @@ jobs:
 
     - name: Deploy to GitHub Pages
       run: |
+        pwd
         cd dist
         git init
         git config user.name "GitHub Actions"
