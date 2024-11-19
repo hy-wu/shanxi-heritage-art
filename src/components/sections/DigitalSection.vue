@@ -38,7 +38,7 @@ export default {
         {
           id: 1,
           name: '叶雕艺术',
-          image: require('../../assets/images/leaf-art.png'),
+          image: null,
           description: '精美的叶雕艺术品，展现自然之美。',
           styles: ['简约', '复古', '现代'],
           colors: ['红色', '绿色', '蓝色'],
@@ -49,7 +49,7 @@ export default {
         {
           id: 2,
           name: '立体纸雕',
-          image: require('../../assets/images/paper-art.png'),
+          image: null,
           description: '立体纸雕，层次分明，栩栩如生。',
           styles: ['传统', '现代'],
           colors: ['白色', '黑色'],
@@ -60,7 +60,7 @@ export default {
         {
           id: 3,
           name: '传统剪纸',
-          image: require('../../assets/images/traditional-cut.png'),
+          image: null,
           description: '传统剪纸，手工艺的精华。',
           styles: ['经典', '创新'],
           colors: ['红色', '黄色'],
@@ -71,6 +71,11 @@ export default {
         // 可以添加更多产品
       ]
     };
+  },
+  async created() {
+    this.products[0].image = (await import('../../assets/images/leaf-art.png')).default;
+    this.products[1].image = (await import('../../assets/images/paper-art.png')).default;
+    this.products[2].image = (await import('../../assets/images/traditional-cut.png')).default;
   },
   methods: {
     calculatePrice(product) {
