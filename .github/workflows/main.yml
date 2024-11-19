@@ -30,8 +30,11 @@ jobs:
       - name: Run lint
         run: npm run lint
 
-      - name: Build project and deploy
+      - name: Build project
         run: npm run build
+
+      - name: Deploy
+        run: |
           pwd
           ls
           cd dist
