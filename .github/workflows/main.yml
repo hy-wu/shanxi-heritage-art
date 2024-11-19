@@ -35,14 +35,12 @@ jobs:
 
       - name: Deploy
         run: |
-          pwd
-          ls
           cd dist
           git init
           git config user.name "GitHub Actions"
           git config user.email "<>"
           git add .
           git commit -m "Deploy to GitHub Pages"
-          git push --force --quiet "https://${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" master:gh-pages
+          git push --force --quiet "git@github.com/${{ github.repository }}.git" main:gh-pages
           cd ..
         
