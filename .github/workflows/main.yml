@@ -33,14 +33,14 @@ jobs:
       - name: Build project
         run: npm run build
 
-      - name: Deploy
-        run: |
-          cd dist
-          git init
-          git config user.name "GitHub Actions"
-          git config user.email "<>"
-          git add .
-          git commit -m "Deploy to GitHub Pages"
-          git push --force --quiet "git@github.com:${{ github.repository }}.git" master:gh-pages
-          cd ..
-        
+# not working
+#      - name: Deploy
+#        run: |
+#          cd dist
+#          git init
+#          git config user.name "GitHub Actions"
+#          git config user.email "<>"
+#          git add .
+#          git commit -m "Deploy to GitHub Pages"
+#          git push --force --quiet "git@github.com:${{ github.repository }}.git" master:gh-pages
+
