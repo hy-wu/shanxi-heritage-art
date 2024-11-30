@@ -1,0 +1,1 @@
+"use strict";(self["webpackChunkshanxi_heritage_art"]=self["webpackChunkshanxi_heritage_art"]||[]).push([[735],{4735:function(e,a,t){e.exports=t.p+"img/leaf-art.55a667e5.png"}}]);

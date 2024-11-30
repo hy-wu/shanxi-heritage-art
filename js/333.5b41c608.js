@@ -1,0 +1,1 @@
+"use strict";(self["webpackChunkshanxi_heritage_art"]=self["webpackChunkshanxi_heritage_art"]||[]).push([[333],{7333:function(e,a,t){e.exports=t.p+"img/paper-art.78fe6ff2.png"}}]);

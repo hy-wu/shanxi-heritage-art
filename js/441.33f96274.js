@@ -1,0 +1,1 @@
+"use strict";(self["webpackChunkshanxi_heritage_art"]=self["webpackChunkshanxi_heritage_art"]||[]).push([[441],{441:function(e,a,s){e.exports=s.p+"img/太原城市风光.3216388d.png"}}]);

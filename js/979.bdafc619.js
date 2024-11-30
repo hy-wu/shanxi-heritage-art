@@ -1,0 +1,1 @@
+"use strict";(self["webpackChunkshanxi_heritage_art"]=self["webpackChunkshanxi_heritage_art"]||[]).push([[979],{6979:function(e,a,s){e.exports=s.p+"img/传统剪纸艺术.74c939e6.png"}}]);

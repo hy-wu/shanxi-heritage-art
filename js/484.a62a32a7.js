@@ -1,0 +1,1 @@
+"use strict";(self["webpackChunkshanxi_heritage_art"]=self["webpackChunkshanxi_heritage_art"]||[]).push([[484],{9484:function(e,a,s){e.exports=s.p+"img/平遥古城印象.b4242be7.png"}}]);

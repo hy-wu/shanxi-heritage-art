@@ -1,0 +1,1 @@
+"use strict";(self["webpackChunkshanxi_heritage_art"]=self["webpackChunkshanxi_heritage_art"]||[]).push([[55],{6436:function(a,t,e){a.exports=e.p+"img/traditional-cut.624fa3a9.png"}}]);
